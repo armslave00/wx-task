@@ -1,0 +1,20 @@
+{
+  "name": "wx-task",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/armslave00/wx-task.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.18.1",
+    "request": "^2.81.0",
+    "winston": "^2.3.1"
+  }
+}
