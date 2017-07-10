@@ -4,8 +4,8 @@ var winston = require('winston');
 var moment = require('moment');
 
 // var SLEEP_TIME = 60;
-// var TASK_PERIOD = 3600 * 1000 * 1.5;
-var TASK_PERIOD = 3600;
+var TASK_PERIOD = 3600 * 1000 * 1.5;
+// var TASK_PERIOD = 3600;
 
 var logger = new (winston.Logger)({
     transports: [
@@ -25,12 +25,12 @@ var timer = setInterval(function () {
     logger.info('Make Request');
     request({
       method: 'POST',
-    //   url: 'http://121.199.52.161:18083/weixin/auth/jsparam',
-    url: 'http://localhost:3000/aaa',
+      url: 'http://121.199.52.161:18083/weixin/auth/jsparam',
+    // url: 'http://localhost:3000/aaa',
       form: {url:'https://weixin.idongjia.cn/h5-item/334249'},
       headers: {
         'Content-type': 'application/x-www-form-urlencoded',
-        'Flag-Test': 'nodejs'
+        // 'Flag-Test': 'nodejs'
       }
     }, function (error, response, body) {
         if (error) {
