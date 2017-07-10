@@ -4,7 +4,7 @@ var winston = require('winston');
 var moment = require('moment');
 
 // var SLEEP_TIME = 60;
-var TASK_PERIOD = 3600 * 1000 * 1.5;
+var TASK_PERIOD = 3600 * 1000;
 // var TASK_PERIOD = 3600;
 
 var logger = new (winston.Logger)({
